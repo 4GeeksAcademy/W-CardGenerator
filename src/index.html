@@ -3,27 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Get a Random Card</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid py-3">
+      <div class="card">
+        <span class="top-suit"></span>
+        <span class="number">7</span>
+        <span class="bottom-suit"></span>
+      </div>
+      <div class="botones">
+        <button id="botonGenerador" class="button">
+          <b>Give me a new Card</b>
+        </button>
+        <button id="timerButton" class="btn btn-dark">Stop Timer</button>
+      </div>
+      <div class="resize">
+        <input 
+          class="height" 
+          id="heightCard" 
+          name="heightCard" 
+          type="number" 
+          placeholder="Set your height (300-600)"
+          min="250"
+          max="600"
+        ></input>
+        <input 
+          class="width" 
+          id="widthCard"
+          name="widthCard"
+          type="number" 
+          placeholder="Set your width (50-600)"
+          min="50"
+          max="600"
+        ></input>
       </div>
     </div>
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>

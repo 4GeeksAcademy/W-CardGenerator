@@ -1,1 +1,105 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+
+.card {
+  margin: auto;
+  border: solid black 1px;
+  border-radius: 5%;
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.top-suit {
+  padding: 5%;
+  display: flex;
+  justify-content: start;
+  font-size: xxx-large;
+  &.spade:before {
+    content: "\2660";
+  }
+  &.club:before {
+    content: "\2663";
+  }
+  &.heart:before {
+    content: "\2665";
+    color: red;
+  }
+  &.diam:before {
+    content: "\2666";
+    color: red;
+  }
+}
+
+.bottom-suit {
+  position: relative;
+  padding: 5%;
+  display: flex;
+  justify-content: end;
+  font-size: xxx-large;
+  &.spade:before {
+    content: "\2660";
+  }
+  &.club:before {
+    content: "\2663";
+  }
+  &.heart:before {
+    content: "\2665";
+    color: red;
+  }
+  &.diam:before {
+    content: "\2666";
+    color: red;
+  }
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  margin-right: 5px;
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.resize {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.height {
+  display: flex;
+  border: solid black 2px;
+  border-radius: 25px;
+  margin-right: 5px;
+  width: 220px;
+}
+
+.width {
+  display: flex;
+  border: solid black 2px;
+  border-radius: 25px;
+  margin-right: 5px;
+  width: 220px;
+}
