@@ -3,21 +3,26 @@ body {
 }
 
 .card {
+  position: relative;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   border: solid black 1px;
   border-radius: 5%;
   height: 400px;
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: white;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .top-suit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   padding: 5%;
-  display: flex;
-  justify-content: start;
+  /* display: flex;
+  justify-content: start; */
   font-size: xxx-large;
   &.spade:before {
     content: "\2660";
@@ -36,10 +41,12 @@ body {
 }
 
 .bottom-suit {
-  position: relative;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   padding: 5%;
-  display: flex;
-  justify-content: end;
+  /* display: flex;
+  justify-content: end; */
   font-size: xxx-large;
   &.spade:before {
     content: "\2660";
@@ -58,9 +65,10 @@ body {
 }
 
 .number {
-  display: flex;
-  justify-content: center;
+  position: absolute;
   font-size: xxx-large;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .botones {
